@@ -1,0 +1,56 @@
+@import "variables.css";
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+.app {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    .left {
+        .back {
+            .label {
+                display: none;
+            }
+        }
+    }
+    .left:hover {
+        display: grid;
+        grid-template-columns: 1.5fr 1fr;
+        .back {
+            background-color: var(--lightGray);
+            position: relative;
+            cursor: pointer;
+            .label {
+                display: block;
+                top: 10px;
+                left: 10px;
+                color: gray;
+            }
+        }
+    }
+    .center {
+        background-color: var(--lightGray);
+    }
+    .right {
+
+    }
+}
+.button {
+    height: 38px;
+    width: 300px;
+    border-radius: 5px;
+    border: solid var(--lightBlue) 2px;
+    cursor: pointer;
+    background-color: var(--lightGray);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.logo {
+    animation: App-logo-spin infinite 20s linear;
+    position: absolute;
+}

@@ -1,0 +1,26 @@
+@import "../../variables.css";
+.createPostBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    * {
+        width: 400px;
+    }
+    & textarea {
+        height: 80px;
+        margin-top: 10px;
+    }
+    & input {
+        margin-top: 10px;
+    }
+}
+.button {
+    composes: button from '../../App.module.css';
+}
+.addButton:hover {
+    background-color: var(--lightGray);
+}
+.container {
+    align-self: center;
+    margin: auto;
+}

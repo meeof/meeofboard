@@ -1,0 +1,5 @@
+.logo {
+    composes: logo from '../../App.module.css';
+    left: 50%;
+    top: 50%;
+}
